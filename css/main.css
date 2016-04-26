@@ -152,6 +152,11 @@ ul {
   display: block;
 }
 
+.card {
+  display: block;
+  width: 100%;
+}
+
 @media only screen and (min-width: 25em) {
 
   .link-card {
