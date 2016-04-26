@@ -72,6 +72,8 @@ ul {
   position: relative;
   padding: .3rem;
   background-color: #ccc;
+  margin: 0;
+  height: 18rem;
 }
 
 .banner {
@@ -86,10 +88,15 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   right: .1rem;
+  display: block;
+  z-index: 10;
 }
 
 .banner-img {
-  width: 100%;
+  width: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .div-btn {
@@ -173,10 +180,34 @@ ul {
   margin: .5rem;
 }
 
+footer {
+  background-color: gray;
+  display: block;
+  padding: 0;
+  color: white;
+}
+
+.contect-info, .small-nav {
+  display: inline-block;
+  background-color: #ccc;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.small-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
 @media only screen and (min-width: 25em) {
 
   .link-card {
-    width: 70%;
+    width: 18rem;
   }
 
 }
@@ -197,6 +228,18 @@ ul {
     line-height: 1.4;
   }
 
+  .link-banner {
+    height: 20rem;
+  }
+
+  .banner-item {
+    display: inline-block;
+  }
+
+  .banner-img {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -211,12 +254,20 @@ ul {
     line-height: 1.5;
   }
 
+  .link-banner {
+    height: 22rem;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   body {
     font-size: 130%;
+  }
+
+  .link-card {
+    width: 30%;
   }
 
 }
