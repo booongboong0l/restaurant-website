@@ -155,11 +155,22 @@ ul {
 .card {
   display: block;
   width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 .card img {
   display: block;
-  width: 100%;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.second {
+  background-color: #ccc;
+}
+
+.card-body h2 {
+  margin: .5rem;
 }
 
 @media only screen and (min-width: 25em) {
