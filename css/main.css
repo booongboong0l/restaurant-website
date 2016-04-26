@@ -125,7 +125,7 @@ ul {
   background-color: gray;
   text-align: center;
   padding: 1rem;
-  width: 100%;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -155,7 +155,7 @@ ul {
 @media only screen and (min-width: 25em) {
 
   .link-card {
-    width: 60%;
+    width: 70%;
   }
 
 }
