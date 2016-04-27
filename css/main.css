@@ -69,6 +69,14 @@ ul {
   margin: .5rem 0 0 0;
 }
 
+nav a {
+  background-position: gray;
+}
+
+nav a:hover {
+  background-color: #ccc;
+}
+
 nav li {
   background-color: gray;
 }
