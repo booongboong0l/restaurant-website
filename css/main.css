@@ -96,7 +96,7 @@ nav li:hover {
 
 .label img {
   display: block;
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .nav-item {
@@ -385,16 +385,16 @@ footer a {
   }
 
   .card-body {
-    width: 25%;
+    width: 35%;
   }
 
   .left {
     position: absolute;
-    left: 1rem;
+    left: 1.5rem;
   }
 
   .right {
-    right: 1rem;
+    right: 1.5rem;
     position: absolute;
   }
 
