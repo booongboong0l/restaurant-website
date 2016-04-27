@@ -41,6 +41,10 @@ h1 {
   padding: 0;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
 h1 .logo {
   width: 100%;
   top: 50%;
@@ -50,12 +54,45 @@ h1 .logo {
 
 nav {
   float: right;
-  right: .5rem;
+  right: 0;
   position: relative;
+  padding: 1.5rem;
 }
 
 ul {
   list-style: none;
+}
+
+.nav {
+  display: none;
+  padding: .5rem;
+  margin: .5rem 0 0 0;
+}
+
+nav li:hover {
+  background-color: #ccc;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.nav-check:checked ~ .label img {
+  background-color: #ccc;
+}
+
+.label img {
+  display: block;
+  width: 1.5rem;
 }
 
 .nav-item {
@@ -90,6 +127,11 @@ ul {
   right: .1rem;
   display: block;
   z-index: 10;
+  margin: .5rem;
+}
+
+.banner-item h2 {
+  margin: 0;
 }
 
 .banner-img {
@@ -97,6 +139,7 @@ ul {
   position: absolute;
   right: 0;
   bottom: 0;
+  margin: .5rem;
 }
 
 .div-btn {
@@ -182,9 +225,9 @@ ul {
 
 footer {
   background-color: gray;
-  display: block;
   padding: 0;
   color: white;
+  font-size: .7rem;
 }
 
 .contect-info, .small-nav {
@@ -192,6 +235,11 @@ footer {
   background-color: #ccc;
   margin: 1rem;
   padding: 1rem;
+  border-radius: 8px;
+}
+
+footer a:hover {
+  color: white;
 }
 
 footer a {
@@ -208,6 +256,15 @@ footer a {
 
   .link-card {
     width: 18rem;
+  }
+
+  footer {
+    height: 17rem;
+  }
+
+  .footer-group {
+    position: absolute;
+    right: 1rem;
   }
 
 }
@@ -233,11 +290,33 @@ footer a {
   }
 
   .banner-item {
+    display: block;
+    left: 10%;
+    width: 35.5%;
+  }
+
+  .banner-item h2, p, .div-btn {
     display: inline-block;
+    margin: 0 0 .5rem 0;
+    padding: 0;
   }
 
   .banner-img {
     display: inline-block;
+    right: 10%;
+  }
+
+  .card-group img {
+    width: 60%;
+  }
+
+  .card {
+    width: 88%;
+  }
+
+  .footer-group {
+    margin: 0 auto;
+    display: block;
   }
 
 }
@@ -254,8 +333,70 @@ footer a {
     line-height: 1.5;
   }
 
+  nav {
+    padding: 0;
+  }
+
+  .nav-check, label {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    margin: 0;
+    background-color: gray;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 1.3rem 2rem 1.3rem 2rem;
+    margin: 0;
+  }
+
   .link-banner {
     height: 22rem;
+  }
+
+  .banner-item {
+    left: 20%;
+    width: 25%;
+  }
+
+  .banner-img {
+    right: 20%;
+    width: 30%;
+  }
+
+  .card-group img {
+    width: 50%;
+  }
+
+  .card {
+    position: relative;
+    height: 30rem;
+  }
+
+  .card img {
+    bottom: 1rem;
+  }
+
+  .card-body {
+    width: 25%;
+  }
+
+  .left {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .right {
+    right: 1rem;
+    position: absolute;
+  }
+
+  footer {
+    height: 15rem;
   }
 
 }
@@ -268,6 +409,20 @@ footer a {
 
   .link-card {
     width: 30%;
+  }
+
+  .banner-item {
+    left: 25%;
+    width: 18%;
+  }
+
+  .banner-img {
+    right: 25%;
+    width: 23%;
+  }
+
+  .card-group img {
+    width: 40%;
   }
 
 }
