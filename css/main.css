@@ -28,6 +28,7 @@ header {
   overflow: hidden;
   position: relative;
   width: 100%;
+  padding: 0 2rem 0 0;
 }
 
 h1 {
@@ -56,7 +57,6 @@ nav {
   float: right;
   right: 0;
   position: relative;
-  padding: 1.5rem;
 }
 
 ul {
@@ -65,23 +65,23 @@ ul {
 
 .nav {
   display: none;
-  padding: .5rem;
-  margin: .5rem 0 0 0;
 }
 
-nav a {
+.nav li {
+  padding: 0;
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
   background-color: gray;
+  padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
 nav a:hover {
-  background-color: #ccc;
-}
-
-nav li {
-  background-color: gray;
-}
-
-nav li:hover {
   background-color: #ccc;
 }
 
@@ -105,14 +105,6 @@ nav li:hover {
 .label img {
   display: block;
   width: 2rem;
-}
-
-.nav-item {
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .link-banner {
